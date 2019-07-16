@@ -28,4 +28,10 @@ yesNoButton.addEventListener('click', () => {
     };
 })
 
+let resetButton = document.querySelector('.reset');
+resetButton.addEventListener('click', ()=>{
+    para.textContent = ' ';
+    para2.textContent = ' ';
+})
+
 
