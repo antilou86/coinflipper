@@ -14,7 +14,7 @@ body {
 
 header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 span {
@@ -53,8 +53,44 @@ p {
     margin-top: 20px;
     padding-top: 25px;
 }
-
+.formPara{
+    margin-top: 5px;
+    padding-top: 0;
+    font-size: 15px;
+}
 .reset {
     background-color: rgb(228, 36, 36);
     color: white;
 }
+
+.nameSubmitButton{
+    height: 50px;
+    width: 35%;
+}
+
+form {
+    font-size: 40px;
+}
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+  }
+  .formNames {
+    height: auto;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .formPara3{
+    font-size: 50px;
+  }
