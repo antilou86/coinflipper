@@ -3,18 +3,18 @@ let randomNumberMaker = function() {
     return Math.random();
 }
 
-let yesNoResults = document.querySelector('.yesNoResults');
-let nameResults = document.querySelector('.morganOrLouResults');
-let formNames = document.querySelector('formNames')
+const yesNoResults = document.querySelector('.yesNoResults');
+const nameResults = document.querySelector('.morganOrLouResults');
+const formNames = document.querySelector('formNames')
 
-let para = document.createElement('p');
-let para2 = document.createElement('p');
-let para3 = document.createElement('p');
+const para = document.createElement('p');
+const para2 = document.createElement('p');
+const para3 = document.createElement('p');
 
 nameResults.appendChild(para);
 yesNoResults.appendChild(para2);
 
-let nameButton = document.querySelector('.morganOrLou button')
+const nameButton = document.querySelector('.morganOrLou button');
 nameButton.addEventListener('click', () => {
     if (randomNumberMaker() < .5){
         para.textContent = 'Lou'
@@ -23,7 +23,7 @@ nameButton.addEventListener('click', () => {
     };
 })
 
-let yesNoButton = document.querySelector('.yesNo button')
+const yesNoButton = document.querySelector('.yesNo button');
 yesNoButton.addEventListener('click', () => {
     if (randomNumberMaker() < .5){
         para2.textContent = 'Yes'
@@ -32,10 +32,20 @@ yesNoButton.addEventListener('click', () => {
     };
 })
 
-let resetButton = document.querySelector('.reset');
+const resetButton = document.querySelector('.reset');
 resetButton.addEventListener('click', ()=>{
     para.textContent = ' ';
     para2.textContent = ' ';
 })
 
+let nameArray = ["lou", "morgan"]
 
+const formButton = document.querySelector('.nameSubmitButton');
+formButton.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    name = document.querySelector("input[type=text]").value;
+    if (name.length < 1) {
+        return alert("please enter a name")
+    }
+    nameArray.push(name)
+})
