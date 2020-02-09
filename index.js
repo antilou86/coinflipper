@@ -5,8 +5,12 @@ let randomNumberMaker = function() {
 
 let yesNoResults = document.querySelector('.yesNoResults');
 let nameResults = document.querySelector('.morganOrLouResults');
+let formNames = document.querySelector('formNames')
+
 let para = document.createElement('p');
 let para2 = document.createElement('p');
+let para3 = document.createElement('p');
+
 nameResults.appendChild(para);
 yesNoResults.appendChild(para2);
 
