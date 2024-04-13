@@ -1,5 +1,5 @@
 const yesNoResults = document.querySelector('.yesNoResults');
-const nameResults = document.querySelector('.morganOrLouResults');
+const nameResults = document.querySelector('.randoButtonResults');
 const formNames = document.querySelector('.formNames')
 
 const para = document.createElement('p');
@@ -12,10 +12,10 @@ nameResults.appendChild(para);
 yesNoResults.appendChild(para2);
 formNames.appendChild(para3);
 
-const nameButton = document.querySelector('.morganOrLou button');
+const nameButton = document.querySelector('.randoButton button');
 
 //sets default names 
-let nameArray = ["Lou", "Morgan"]
+let nameArray = ["Roll Again"]
 
 nameButton.addEventListener('click', () => {
     let x = Math.random() * nameArray.length
@@ -36,7 +36,7 @@ resetButton.addEventListener('click', ()=>{
     para.textContent = ' ';
     para2.textContent = ' ';
     para3.textContent = ' ';
-    nameArray = ["Lou", "Morgan"];
+    nameArray = ["Roll Again"];
 })
 
 const formButton = document.querySelector('.nameSubmitButton');
@@ -47,11 +47,11 @@ formButton.addEventListener('click', (Event) => {
     name = document.querySelector("input[type=text]").value;
     //checks for empty string
     if (name.length < 1) {
-        return alert("please enter a name")
+        return alert("please enter a thing")
     }
     //checks for duplicate name
     if (nameArray.includes(name)){
-        return alert("you've already entered that name")
+        return alert("you've already entered that thing")
     }
     //adds name to default array
     nameArray.push(name)
