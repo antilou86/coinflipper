@@ -36,7 +36,8 @@ resetButton.addEventListener('click', ()=>{
     para.textContent = ' ';
     para2.textContent = ' ';
     para3.textContent = ' ';
-    nameArray = ["Roll Again"];
+    nameArray = ["Roll Again", "daddy", "lorelei frozman", "jessie"
+    ];
 })
 
 const formButton = document.querySelector('.nameSubmitButton');
@@ -52,6 +53,10 @@ formButton.addEventListener('click', (Event) => {
     //checks for duplicate name
     if (nameArray.includes(thing)){
         return alert("you've already entered that thing")
+    }
+    //checks for whitespace only entry
+    if (thing.trim().length < 1) {
+        return alert("Please don't just enter empty spaces...")
     }
     //adds name to default array
     nameArray.push(thing)
