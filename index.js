@@ -1,5 +1,5 @@
 const yesNoResults = document.querySelector('.yesNoResults');
-const nameResults = document.querySelector('.morganOrLouResults');
+const nameResults = document.querySelector('.whoResults');
 const formNames = document.querySelector('.formNames')
 
 const para = document.createElement('p');
@@ -12,7 +12,7 @@ nameResults.appendChild(para);
 yesNoResults.appendChild(para2);
 formNames.appendChild(para3);
 
-const nameButton = document.querySelector('.morganOrLou button');
+const nameButton = document.querySelector('.who button');
 
 //sets default names 
 let nameArray = ["Roll Again"];
