@@ -15,7 +15,7 @@ formNames.appendChild(para3);
 const nameButton = document.querySelector('.morganOrLou button');
 
 //sets default names 
-let nameArray = ["Roll Again"]
+let nameArray = ["Roll Again"];
 
 nameButton.addEventListener('click', () => {
     let x = Math.random() * nameArray.length
@@ -36,8 +36,7 @@ resetButton.addEventListener('click', ()=>{
     para.textContent = ' ';
     para2.textContent = ' ';
     para3.textContent = ' ';
-    nameArray = ["Roll Again", "daddy", "lorelei frozman", "jessie"
-    ];
+    nameArray = ["Roll Again"];
 })
 
 const formButton = document.querySelector('.nameSubmitButton');
